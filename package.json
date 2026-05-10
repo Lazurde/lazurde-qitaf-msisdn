@@ -1,0 +1,29 @@
+{
+  "name": "@lazurde/qitaf-msisdn",
+  "version": "1.0.0",
+  "description": "KSA MSISDN normalisation and masking library shared by extension and middleware",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "test:coverage": "jest --coverage"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "transform": {
+      "^.+\\.ts$": "babel-jest"
+    },
+    "testMatch": ["**/__tests__/**/*.test.ts"],
+    "collectCoverageFrom": ["src/**/*.ts", "!src/__tests__/**"]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.24.0",
+    "@babel/preset-env": "^7.24.0",
+    "@babel/preset-typescript": "^7.24.0",
+    "@types/jest": "^30.0.0",
+    "babel-jest": "^29.0.0",
+    "jest": "^30.0.0",
+    "typescript": "^5.4.5"
+  }
+}
